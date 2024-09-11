@@ -1,7 +1,7 @@
 let playingSounds = []; // Array om de momenteel spelende geluiden op te slaan
 
 function playSound(soundName) {
-    const audio = new Audio(`sounds/${soundName}.mp3`);
+    const audio = new Audio(`Sounds/${soundName}.mp3`);
     audio.play();
     playingSounds.push(audio); // Voeg het geluid toe aan de lijst van spelende geluiden
     audio.onended = () => {
